@@ -20,7 +20,7 @@ let tierra = document.querySelector("#tierra");
 const modelViewer = document.querySelector('#tierra');
 
  btn_interior.addEventListener("click", e => {
-        modelViewer.animationName = modelViewer.animationName === 'expandir' ?;
+        modelViewer.animationName = modelViewer.animationName === 'expandir';
         modelViewer.play();
               
       })
