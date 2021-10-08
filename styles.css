@@ -103,3 +103,43 @@ model-viewer[ar-status="session-started"] > #ar-prompt {
 model-viewer > #ar-prompt > img {
   animation: circle 4s linear infinite;
 }
+
+.button {
+           background-color: #4293C1 ;
+        opacity:1
+           border: none;
+           color: white;
+           padding: 6px;
+           text-align: center;
+           text-decoration: none;
+           display: inline-block;
+           font-size: 10px;
+           margin: 8px 8px;
+           cursor: pointer;
+           border-radius: 7px;
+           border: 0px solid rgba(9, 148, 28, 0.541);
+           box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 0px 0px 0 rgba(0,0,0,0.19);
+
+         }
+
+         .button:hover{
+        opacity:0.6;
+      }
+
+         .wrap {
+         border: solid 1px #ccc;
+         padding: 20px;
+         text-align: center;
+       }
+
+       #output {
+         display: inline-block;
+         top: 4px;
+         position: relative;
+         border: dotted 1px #ccc;
+         padding: 2px;
+       }
+
+       .button {
+         border: solid 0px #ccc;
+       }
