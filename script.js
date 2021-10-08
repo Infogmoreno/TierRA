@@ -13,3 +13,9 @@ const onProgress = (event) => {
   }
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
+
+document.querySelector('#interior').addEventListener('click', () => {
+      document.querySelector('modelviewer').setAttribute('animation', 'expandir')};
+                                                     
+document.querySelector('#contraer').addEventListener('click', () => {
+      document.querySelector('modelviewer').setAttribute('animation', 'contraer')};
