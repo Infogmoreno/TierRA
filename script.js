@@ -19,7 +19,7 @@ let btn_contraer = document.querySelector('#contraer');
 let tierra = document.querySelector("#tierra");                                          
 
  btn_interior.addEventListener("click", e => {
-        tierra.setAttribute('modelViewer.animationName', 'expandir');
-        tierra.play();
+        modelViewer.animationName = modelViewer.animationName === 'expandir' ?;
+        modelViewer.play();
               
       })
