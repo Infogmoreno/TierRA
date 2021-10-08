@@ -15,8 +15,8 @@ const onProgress = (event) => {
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
  document.getElementById("interior").addEventListener("click", e => {
-        var el = document.querySelector("model-viewer");
-        el.setAttribute("animation-name", "expandir");
-        el.play();
+        var tierra = document.querySelector("#tierra");
+        tierra.setAttribute("animation-name", "expandir");
+        tierra.play();
               
       })
