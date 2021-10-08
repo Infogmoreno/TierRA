@@ -55,12 +55,7 @@
        }
     </style>
 
-    <div
-      style="position: fixed; bottom: 20px; width:100%; text-align: center; z-index: 1;"
-    >
-      <button class="button" id="btn2">slot="expandir" info</button>
-      <button class="button" id="btn3">slot="contraer" info</button>
-    </div>
+   
   </head>
   <body>
     <!-- <model-viewer> HTML element -->
@@ -74,6 +69,12 @@
       <div id="ar-prompt">
           <img src="ar_hand_prompt.png">
       </div>
+       <div
+      style="position: fixed; bottom: 20px; width:100%; text-align: center; z-index: 1;"
+    >
+      <button slot="expandir" class="button" id="btn2"></button>
+      <button slot="contraer" class="button" id="btn3"></button>
+    </div>
     </model-viewer>  
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
