@@ -15,11 +15,11 @@ const onProgress = (event) => {
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
 document.querySelector('#interior').addEventListener('click', () => {
-      document.querySelector('modelviewer').setAttribute('animation', 'expandir');
+      document.querySelector('modelviewer').setAttribute('animation-name', 'expandir');
       document.querySelector('modelviewer').play();
 };
                                                      
 document.querySelector('#contraer').addEventListener('click', () => {
-      document.querySelector('modelviewer').setAttribute('animation', 'contraer')
+      document.querySelector('modelviewer').setAttribute('animation-name', 'contraer')
       document.querySelector('modelviewer').play();
 };
