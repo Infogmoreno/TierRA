@@ -8,6 +8,54 @@
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
     <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+     <style>
+         .button {
+           background-color: #CD6155;
+        opacity:1
+           border: none;
+           color: white;
+           padding: 6px;
+           text-align: center;
+           text-decoration: none;
+           display: inline-block;
+           font-size: 10px;
+           margin: 8px 8px;
+           cursor: pointer;
+           border-radius: 7px;
+           border: 0px solid rgba(9, 148, 28, 0.541);
+           box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2), 0 0px 0px 0 rgba(0,0,0,0.19);
+
+         }
+
+         .button:hover{
+        opacity:0.6;
+      }
+
+         .wrap {
+         border: solid 1px #ccc;
+         padding: 20px;
+         text-align: center;
+       }
+
+       #output {
+         display: inline-block;
+         top: 4px;
+         position: relative;
+         border: dotted 1px #ccc;
+         padding: 2px;
+       }
+
+       .button {
+         border: solid 0px #ccc;
+       }
+    </style>
+
+    <div
+      style="position: fixed; bottom: 20px; width:100%; text-align: center; z-index: 1;"
+    >
+      <button class="button" id="btn2">expandir info</button>
+      <button class="button" id="btn3">contraer info</button>
+    </div>
   </head>
   <body>
     <!-- <model-viewer> HTML element -->
