@@ -12,7 +12,7 @@ const onProgress = (event) => {
     }
   }
 };
-document.querySelector('model-viewer').addEventListener('progress', onProgress);
+document.querySelector('#tierra').addEventListener('progress', onProgress);
 
 let btn_interior = document.querySelector('#interior');
 let btn_contraer = document.querySelector('#contraer');
