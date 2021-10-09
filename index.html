@@ -27,10 +27,25 @@
        <div
       style="position: fixed; bottom: 20px; width:100%; text-align: center; z-index: 1;"
     >
-      <button class="button" id="interior">Ver interior</button>
-      <button class="button" id="ocultar">Ocultar</button>
+      <button class="button" id="interior" onclick="playAnim">Ver interior</button>
+      <button class="button" id="ocultar" onclick="stop">Ocultar</button>
     </div>
-    </model-viewer>  
+    </model-viewer> 
     
+     <script>
+      function playAnim(){
+      //play to end or rewind if animation is at end//
+    	const modelViewer = document.querySelector('#tierra');
+	    modelViewer.play();
+	    t=modelViewer.duration;
+	    t=t*2000/2 ;// because duration is in second and time to play and rewind//
+	    setTimeout(stop, t);
+  }
+       
+      function stop(){
+      const modelViewer = document.querySelector('#tierra');
+      modelViewer.pause();
+  }
+</script>
   </body>
 </html>
