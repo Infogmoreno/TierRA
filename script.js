@@ -14,21 +14,4 @@ const onProgress = (event) => {
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
-let btn_interior = document.querySelector('#interior');
-let btn_contraer = document.querySelector('#contraer');
-let tierra = document.querySelector("#tierra");                                          
-const modelViewer = document.querySelector('model-viewer');
 
-btn_interior.addEventListener('click', () => {
-  if (modelViewer.paused) {
-    modelViewer.play();
-  } else {
-    modelViewer.pause();
-  }
-});
-
- btn_interior.addEventListener("click", e => {
-        modelViewer.animationName = modelViewer.animationName ('expandir');
-        modelViewer.play();
-              
-      })
