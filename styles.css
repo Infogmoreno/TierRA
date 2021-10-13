@@ -52,7 +52,7 @@ model-viewer {
   background-position: 12px 50%;
   background-color: #fff;
   position: absolute;
-  left: 50%;
+  left: 30%;
   transform: translateX(-50%);
   white-space: nowrap;
   bottom: 16px;
